@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apply Now — PinkCity Credit</title>
+<meta name="description" content="Check your loan eligibility with PinkCity Credit in 60 seconds — no documentation upfront, no obligation, callback within 30 minutes." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="container nav-row">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="logo.png" alt="PinkCity Credit logo"></span>
+      <span>
+        <span class="brand-name" style="display:block">PinkCity Credit</span>
+        <span class="brand-tag">Finance Made Effortless</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="loans.html">Loans</a>
+      <a href="calculator.html">EMI Calculator</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:+919999999999" class="nav-call"><i data-lucide="phone"></i> +91 99999 99999</a>
+      <a href="apply.html" class="btn btn-primary">Apply Now <i data-lucide="arrow-right"></i></a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><i data-lucide="menu"></i></button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="loans.html">Loans</a>
+      <a href="calculator.html">EMI Calculator</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="apply.html" class="btn btn-primary" style="margin-top:.5rem;justify-content:center">Apply Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="apply section" style="padding-top:3rem">
+    <div class="container">
+      <div>
+        <span class="eyebrow">Eligibility Check</span>
+        <h2 class="balance">See what you qualify for — in 60 seconds.</h2>
+        <p class="lede">Share a few details and one of our advisors will get back with the best matched offers. No credit score impact, completely confidential.</p>
+        <ul>
+          <li><span class="tick"><i data-lucide="check"></i></span> No documentation upfront</li>
+          <li><span class="tick"><i data-lucide="check"></i></span> No obligation</li>
+          <li><span class="tick"><i data-lucide="check"></i></span> Callback within 30 minutes</li>
+        </ul>
+      </div>
+      <form class="form-card" id="eligibilityForm">
+        <div class="form-fields" id="formFields">
+          <h3>Check My Eligibility</h3>
+          <p>Instant, confidential and free.</p>
+          <div class="field-grid">
+            <label class="field"><span>Full Name</span><input type="text" placeholder="Your full name" required></label>
+            <label class="field"><span>Mobile Number</span><input type="tel" placeholder="10-digit mobile" required></label>
+            <label class="field"><span>Loan Type</span>
+              <select required id="loanTypeSelect">
+                <option value="" disabled selected>Select loan type</option>
+              </select>
+            </label>
+            <label class="field"><span>City</span><input type="text" placeholder="e.g. Jaipur" required></label>
+            <label class="field"><span>Monthly Income / Turnover</span><input type="text" placeholder="₹" required></label>
+            <label class="field"><span>Required Loan Amount</span><input type="text" placeholder="₹" required></label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top:1.5rem">Check My Eligibility <i data-lucide="arrow-right"></i></button>
+          <p class="form-submit-note"><i data-lucide="lock"></i>Your information is encrypted and never shared without consent.</p>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="check"><i data-lucide="check"></i></div>
+          <h3>Thank you.</h3>
+          <p>Your details are with us. A senior advisor will call you shortly.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <div class="brand">
+        <span class="brand-mark"><img src="logo.png" alt="PinkCity Credit logo"></span>
+        <span>
+          <span class="brand-name" style="display:block">PinkCity Credit</span>
+          <span class="brand-tag">Finance Made Effortless</span>
+        </span>
+      </div>
+      <p>A trusted Direct Selling Agent (DSA) helping individuals and businesses secure the right loan with complete transparency.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="loans.html">Loan Services</a></li>
+        <li><a href="calculator.html">EMI Calculator</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Legal</div>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Grievance Redressal</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-col-title">Reach Us</div>
+      <ul>
+        <li><i data-lucide="phone"></i> +91 99999 99999</li>
+        <li><i data-lucide="mail"></i> hello@pinkcitycredit.in</li>
+        <li><i data-lucide="map-pin"></i> Jaipur, Rajasthan</li>
+        <li><a href="https://maps.google.com" target="_blank" rel="noreferrer" class="maplink">View on Google Maps →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div id="copyrightYear"></div>
+      <div>Loans are subject to lender approval and terms.</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919999999999" target="_blank" rel="noreferrer" class="fab-whatsapp" aria-label="Chat on WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script src="script.js"></script>
+</body>
+</html>

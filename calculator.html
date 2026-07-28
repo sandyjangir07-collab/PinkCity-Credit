@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EMI Calculator — PinkCity Credit</title>
+<meta name="description" content="Plan your loan EMI with PinkCity Credit's free calculator — adjust loan amount, interest rate and tenure to see your monthly payment instantly." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="container nav-row">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="logo.png" alt="PinkCity Credit logo"></span>
+      <span>
+        <span class="brand-name" style="display:block">PinkCity Credit</span>
+        <span class="brand-tag">Finance Made Effortless</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="loans.html">Loans</a>
+      <a href="calculator.html" class="active">EMI Calculator</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:+919999999999" class="nav-call"><i data-lucide="phone"></i> +91 99999 99999</a>
+      <a href="apply.html" class="btn btn-primary">Apply Now <i data-lucide="arrow-right"></i></a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><i data-lucide="menu"></i></button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="loans.html">Loans</a>
+      <a href="calculator.html" class="active">EMI Calculator</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="apply.html" class="btn btn-primary" style="margin-top:.5rem;justify-content:center">Apply Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">EMI Calculator</span>
+      <h1 class="balance">Plan your EMI with clarity.</h1>
+      <p>Adjust the sliders to see your monthly payment, total interest and total payable amount — instantly.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container">
+      <div class="calc-box">
+        <div class="slider-group">
+          <div>
+            <div class="slider-label-row"><span>Loan Amount</span><span class="slider-value" id="amountLabel">₹15,00,000</span></div>
+            <input type="range" id="amountSlider" min="50000" max="20000000" step="50000" value="1500000">
+          </div>
+          <div>
+            <div class="slider-label-row"><span>Interest Rate (%)</span><span class="slider-value" id="rateLabel">10.50%</span></div>
+            <input type="range" id="rateSlider" min="6" max="24" step="0.1" value="10.5">
+          </div>
+          <div>
+            <div class="slider-label-row"><span>Tenure (months)</span><span class="slider-value" id="tenureLabel">60 mo</span></div>
+            <input type="range" id="tenureSlider" min="6" max="360" step="6" value="60">
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="label">Monthly EMI</div>
+          <div class="emi" id="emiOut">₹0</div>
+          <div class="calc-rows">
+            <div class="calc-row"><span class="l">Principal</span><span class="v" id="principalOut">₹0</span></div>
+            <div class="calc-row"><span class="l">Total Interest</span><span class="v" id="interestOut">₹0</span></div>
+            <div class="calc-divider"></div>
+            <div class="calc-row total"><span class="l">Total Payable</span><span class="v" id="totalOut">₹0</span></div>
+          </div>
+          <a href="apply.html" class="btn btn-primary btn-block">Apply for this loan <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <div class="brand">
+        <span class="brand-mark"><img src="logo.png" alt="PinkCity Credit logo"></span>
+        <span>
+          <span class="brand-name" style="display:block">PinkCity Credit</span>
+          <span class="brand-tag">Finance Made Effortless</span>
+        </span>
+      </div>
+      <p>A trusted Direct Selling Agent (DSA) helping individuals and businesses secure the right loan with complete transparency.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="loans.html">Loan Services</a></li>
+        <li><a href="calculator.html">EMI Calculator</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Legal</div>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Grievance Redressal</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-col-title">Reach Us</div>
+      <ul>
+        <li><i data-lucide="phone"></i> +91 99999 99999</li>
+        <li><i data-lucide="mail"></i> hello@pinkcitycredit.in</li>
+        <li><i data-lucide="map-pin"></i> Jaipur, Rajasthan</li>
+        <li><a href="https://maps.google.com" target="_blank" rel="noreferrer" class="maplink">View on Google Maps →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div id="copyrightYear"></div>
+      <div>Loans are subject to lender approval and terms.</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919999999999" target="_blank" rel="noreferrer" class="fab-whatsapp" aria-label="Chat on WhatsApp"><i data-lucide="message-circle"></i></a>
+<a href="apply.html" class="fab-apply">Apply Now</a>
+
+<script src="script.js"></script>
+</body>
+</html>

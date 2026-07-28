@@ -3,11 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>PinkCity Credit — Finance Made Effortless</title>
-<meta name="description" content="PinkCity Credit helps individuals and businesses secure the right loan from leading banks and NBFCs with expert guidance, minimal documentation and faster approvals." />
-<meta property="og:title" content="PinkCity Credit — Finance Made Effortless" />
-<meta property="og:description" content="Right Loan. Right Guidance. Zero Hassle. Premium loan advisory for individuals and businesses across India." />
-<meta property="og:type" content="website" />
+<title>About Us — PinkCity Credit</title>
+<meta name="description" content="Why individuals and businesses trust PinkCity Credit — expert advisors, bank comparisons, transparent process, and 25+ banking partners across India." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
@@ -27,10 +24,10 @@
       </span>
     </a>
     <nav class="links">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="loans.html">Loans</a>
       <a href="calculator.html">EMI Calculator</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html" class="active">About Us</a>
       <a href="faq.html">FAQ</a>
     </nav>
     <div class="nav-right">
@@ -41,10 +38,10 @@
   </div>
   <div class="mobile-panel" id="mobilePanel">
     <div class="container">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="loans.html">Loans</a>
       <a href="calculator.html">EMI Calculator</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html" class="active">About Us</a>
       <a href="faq.html">FAQ</a>
       <a href="apply.html" class="btn btn-primary" style="margin-top:.5rem;justify-content:center">Apply Now</a>
     </div>
@@ -53,97 +50,44 @@
 
 <main>
 
-  <!-- HERO -->
-  <section id="top" class="hero">
+  <section class="page-header">
     <div class="container">
-      <div>
-        <span class="eyebrow">Premium Loan Advisory</span>
-        <h1 class="balance">The Smarter Way<br class="br-desktop"> to <span class="underline">Get a Loan.</span></h1>
-        <p class="lede balance">Helping individuals and businesses secure the best loan offers from trusted banks and NBFCs — with expert guidance, minimal paperwork and faster approvals.</p>
-        <div class="cta-row">
-          <a href="apply.html" class="btn btn-primary">Apply Now <i data-lucide="arrow-right"></i></a>
-          <a href="tel:+919999999999" class="btn btn-secondary"><i data-lucide="phone"></i> Talk to an Expert</a>
-        </div>
-        <div class="stats">
-          <div class="stat"><b>₹500Cr+</b><span>Loans Facilitated</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><b>25+</b><span>Banking Partners</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><b>4.9★</b><span>Client Rating</span></div>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="glow"></div>
-        <svg viewBox="0 0 400 400" fill="none">
-          <circle cx="200" cy="200" r="170" fill="#E9F2EE"/>
-          <rect x="70" y="230" width="40" height="90" rx="8" fill="#0F5A43"/>
-          <rect x="130" y="190" width="40" height="130" rx="8" fill="#0F5A43" opacity="0.8"/>
-          <rect x="190" y="140" width="40" height="180" rx="8" fill="#0F5A43" opacity="0.9"/>
-          <rect x="250" y="90" width="40" height="230" rx="8" fill="#D4AF37"/>
-          <path d="M70 210 L130 170 L190 130 L250 80 L300 60" stroke="#D4AF37" stroke-width="6" stroke-linecap="round" fill="none"/>
-          <circle cx="300" cy="60" r="14" fill="#D4AF37"/>
-          <path d="M292 60 l6 8 12 -16" stroke="#241C08" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
-      </div>
+      <span class="eyebrow">Why PinkCity Credit</span>
+      <h1 class="balance">Advisory-first. Outcome-obsessed.</h1>
+      <p>We don't push loans — we design solutions. Every recommendation is backed by comparison, negotiation and complete accountability until disbursal.</p>
     </div>
   </section>
 
-  <!-- TRUST STRIP -->
-  <section class="trust-strip">
-    <div class="container">
-      <span class="trust-item"><i data-lucide="check"></i> Multiple Banking Partners</span>
-      <span class="trust-item"><i data-lucide="check"></i> Fast Approvals</span>
-      <span class="trust-item"><i data-lucide="check"></i> Minimal Documentation</span>
-      <span class="trust-item"><i data-lucide="check"></i> End-to-End Assistance</span>
-      <span class="trust-item"><i data-lucide="check"></i> Secure &amp; Confidential</span>
+  <!-- WHY CHOOSE -->
+  <section class="why" style="padding:3.5rem 0 5rem">
+    <div class="container" style="grid-template-columns:1fr">
+      <div class="why-grid" id="whyGrid"></div>
     </div>
   </section>
 
-  <!-- LOAN CATEGORIES (preview) -->
+  <!-- TESTIMONIALS -->
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Loan Solutions</span>
-        <h2 class="balance">A loan for every ambition.</h2>
-        <p>From growing your business to owning your dream home — we structure the right financing across ten categories.</p>
+        <span class="eyebrow">Client Voices</span>
+        <h2 class="balance">Advice you can trust.</h2>
       </div>
-      <div class="grid-cards" id="loanGridPreview"></div>
-      <div class="view-all">
-        <a href="loans.html" class="btn btn-secondary">View All 10 Loan Options <i data-lucide="arrow-right"></i></a>
-      </div>
+      <div class="testi-grid" id="testiGrid"></div>
     </div>
   </section>
 
-  <!-- PROCESS -->
+  <!-- PARTNERS -->
   <section class="section" style="background:var(--surface)">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">How it works</span>
-        <h2 class="balance">Five steps. Zero hassle.</h2>
+        <span class="eyebrow">Our Ecosystem</span>
+        <h2 class="balance">Trusted Banking Partners</h2>
+        <p>Direct relationships with leading banks and NBFCs across India.</p>
       </div>
-      <div class="steps-wrap">
-        <div class="steps-line"></div>
-        <ol class="steps" id="stepsGrid"></ol>
-      </div>
+      <div class="partners-grid" id="partnersGrid"></div>
     </div>
   </section>
 
-  <!-- MINI WHY TEASER -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Why PinkCity Credit</span>
-        <h2 class="balance">Advisory-first. Outcome-obsessed.</h2>
-        <p>We don't push loans — we design solutions, backed by comparison and complete accountability until disbursal.</p>
-      </div>
-      <div class="mini-why" id="miniWhyGrid"></div>
-      <div class="mini-why-cta">
-        <a href="about.html" class="btn btn-secondary">Why Founders Trust Us <i data-lucide="arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
   <section class="section">
     <div class="container">
       <div class="final-cta-box">
